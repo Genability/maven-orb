@@ -4,7 +4,7 @@ description: |
 usage:
   version: 2.1
   orbs:
-    maven: genability/maven@1.1
+    maven: genability/maven-orb@dev:alpha
   executors:
     j13:
       docker:

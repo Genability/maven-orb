@@ -4,7 +4,7 @@ usage:
   version: 2.1
 
   orbs:
-    maven: genability/maven@x.y
+    maven: genability/maven-orb@x.y
 
   workflows:
     maven_test:
