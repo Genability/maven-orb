@@ -3,7 +3,7 @@ version: 2.1
 # add your orb below, to be used in integration tests (note: a @dev:alpha
 # release must exist.);
 orbs:
-  maven: circleci/maven@dev:alpha
+  maven: genability/maven@dev:alpha
   orb-tools: circleci/orb-tools@9.0
 
 executors:
@@ -61,7 +61,7 @@ workflows:
       # store CIRCLE_TOKEN as a project env var or Contexts resource
       # if using Contexts, add your context below
       - orb-tools/publish-dev:
-          orb-name: circleci/maven
+          orb-name: genability/maven
           context: orb-publisher
           requires:
             - orb-tools/pack
@@ -105,7 +105,7 @@ workflows:
       # be skipped.
       # e.g. [semver:patch] will cause a patch version to be published.
       - orb-tools/dev-promote-prod-from-commit-subject:
-          orb-name: circleci/maven
+          orb-name: genability/maven
           context: orb-publisher
           add-pr-comment: true
           bot-token-variable: GHI_TOKEN
