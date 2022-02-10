@@ -4,7 +4,7 @@ description: |
 usage:
   version: 2.1
   orbs:
-    maven: circleci/maven@1.1
+    maven: genability/maven@1.1
   executors:
     j13:
       docker:
